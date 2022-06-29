@@ -23,6 +23,8 @@ public class TestingMain {
 
         if (result1.equals("11")) {
             System.out.println("calculator test OK");
+        } else {
+            System.out.println("calculator Error!");
         }
 
     }
