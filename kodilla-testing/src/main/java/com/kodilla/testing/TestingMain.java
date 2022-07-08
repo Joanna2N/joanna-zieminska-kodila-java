@@ -8,9 +8,9 @@ public class TestingMain {
     public static void main(String[] args) {
         SimpleUser simpleUser = new SimpleUser("theForumUser");
 
-        String result = simpleUser.getUsername();
+        String result2 = simpleUser.getUsername();
 
-        if (result.equals("theForumUser")) {
+        if (result2.equals("theForumUser")) {
             System.out.println("test OK");
         } else {
             System.out.println("Error!");
@@ -19,13 +19,20 @@ public class TestingMain {
       //    tu umieść kolejny test ->
         Calculator calculator = new Calculator();
 
-        int result1 = Calculator.addAToB(6, 5);
+        int result = calculator.addAToB(6, 5);
 
-        if (result1.equals("11")) {
-            System.out.println("calculator test OK");
+        if (result == 11) {
+            System.out.println("calculator add test OK");
         } else {
-            System.out.println("calculator Error!");
+            System.out.println("calculator add Error!");
         }
 
+        int result1 = calculator.subtractAFromB(16, 35);
+
+        if (result1 == 19) {
+            System.out.println("calculator substract test OK");
+        } else {
+            System.out.println("calculator substract Error!");
+        }
     }
 }
